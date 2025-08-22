@@ -1,0 +1,13 @@
+name: Mi primer flujo de trabajo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Saludar
+        run: echo "¡Hola, Cristhian! Este es mi primer flujo de trabajo."
